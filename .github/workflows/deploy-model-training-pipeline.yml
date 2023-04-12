@@ -80,7 +80,7 @@ jobs:
         register-environment,
         register-dataset,
       ]
-    uses: Azure/mlops-templates/.github/workflows/run-pipeline.yml@main
+    uses: sdonohoo/mlops-templates/.github/workflows/run-pipeline.yml@main
     with:
       resource_group: ${{ needs.get-config.outputs.resource_group }}
       workspace_name: ${{ needs.get-config.outputs.aml_workspace }}
